@@ -1,0 +1,37 @@
+{
+  "name": "sprint1_deepening_counter",
+  "version": "1.0.0",
+  "description": "web pack settings",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohaOtalv/sprint1_deepening_counter.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Johanna Otalvaro Henao <kjotalvaro5@misena.edu.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohaOtalv/sprint1_deepening_counter/issues"
+  },
+  "homepage": "https://github.com/JohaOtalv/sprint1_deepening_counter#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini": "^1.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
