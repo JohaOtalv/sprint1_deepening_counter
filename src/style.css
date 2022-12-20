@@ -1,7 +1,26 @@
 html {
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 16x;
-    background-color: #2b3a42;
-    color: #8dd6f9;
+    font-size: 16px;
+}
+
+body {
+    background-image: URL("./assets/pattern-hills.svg");
+    background-position: bottom;
+    background-size: cover;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon {
+    max-width: 4rem;
 }
