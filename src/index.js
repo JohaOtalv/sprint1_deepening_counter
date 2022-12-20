@@ -1,4 +1,5 @@
 import "./style.scss";
+import "./mobile_style.scss";
 
 const counter = setInterval(function () {
 

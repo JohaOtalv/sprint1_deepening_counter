@@ -1,0 +1,29 @@
+@media screen and (max-width: 510px) {
+    .counter_child {
+        width: 70px;
+        height: 70px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    h1 {
+
+        margin-top: 17px;
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-top: 200px;
+
+    }
+
+    .social {
+        margin-top: 370px;
+        gap: 20px;
+        padding-bottom: 0%;
+    }
+}
