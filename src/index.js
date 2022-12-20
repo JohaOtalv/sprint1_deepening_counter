@@ -1,24 +1,41 @@
-import style from "./style.css";
-import logo from "./assets/pattern-hills.svg";
-import gen from "./assets/icon-facebook.svg"
+import "./style.scss";
 
-const arr = [1, 2, 3],
-    codeESNext = () => console.log(...arr);
-console.log("hola webpack");
-codeESNext();
+const counter = setInterval(function () {
 
-// document.getElementById("app").innerHTML = `<img src="${logo}" alt="Webpack">`;
-const d = document,
-    $app = d.getElementById("app"),
-    $h1 = d.createElement("h1"),
-    $logo = d.createElement("img"),
-    $img = d.createElement("img");
+    const init = new Date('December 24, 2022 23:59:59').getTime();
 
-$h1.textContent = "prueba";
-$logo.src = logo;
-$logo.classList.add("icon");
-$img.src = gen;
+    const today = new Date().getTime();
 
-$app.appendChild($h1);
-// $app.appendChild($logo);
-$app.appendChild($img);
+    let subtr = init - today;
+
+    subtr /= 1000;
+
+    const days = Math.floor(subtr / (60 * 60 * 24));
+
+    const hours = Math.floor((subtr % (60 * 60 * 24)) / (60 * 60));
+
+    const minutes = Math.floor((subtr % (60 * 60)) / (60));
+
+    const seconds = Math.floor(subtr % (60));
+
+
+    const count = document.getElementById('counter');
+
+    count.innerHTML = `<div class="counter_child" id="days">
+                        <h1>${days}</h1>
+                        <p>DAYS</p>
+                    </div>
+                    <div class="counter_child" id="hours">
+                        <h1>${hours}</h1>
+                        <p>HOURS</p>
+                    </div>
+                    <div class="counter_child" id="minutes">
+                        <h1>${minutes}</h1>
+                        <p>MINUTES</p>
+                    </div>
+                    <div class="counter_child" id="seconds">
+                        <h1>${seconds}</h1>
+                        <p>SECONDS</p>
+                    </div>`;
+}, 1000);
+
