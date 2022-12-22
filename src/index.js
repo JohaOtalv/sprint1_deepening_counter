@@ -3,7 +3,7 @@ import "./mobile_style.scss";
 
 const counter = setInterval(function () {
 
-    const init = new Date('December 24, 2022 23:59:59').getTime();
+    const init = new Date('March 12, 2023 07:30:00').getTime();
 
     const today = new Date().getTime();
 
